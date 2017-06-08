@@ -34,7 +34,7 @@ RANGE = 'range'
 
 SVM_KERNEL = 'rbf'
 MAX_LAYER = 50
-DIR = utils.mkpath(['report', data_set, 'classifiers'])
+DIR = utils.mkpath(['report', 'classifiers'])
 
 keys = (TREE, KNN, SVM, NN, BOOST, FOREST)
 
@@ -138,7 +138,7 @@ def optimize(data, values, kernel):
         ve, _ = q.get()
         val_errors.append(ve)
 
-    utils.debug('len val_errors = {0}'.format(val_errors))
+    utils.debug('len val_errors = {0}'.format(len(val_errors)))
 
     # get training error for optimal arg
     x, y = utils.unpack(data)
@@ -197,7 +197,7 @@ while cmd != 'quit':
 
         optimal, errors, train_error, val_error, calc_time = optimize(train, solution_space, kernel)
 
-        utils.debug('len errors = {0}'.format(errors))
+        utils.debug('len errors = {0}'.format(len(errors)))
         if len(errors) != len(solution_space):
             utils.debug('invalid error size: len(errors) != len(solution_space)\n {0} != {1}'.format(len(errors), len(solution_space)))
 

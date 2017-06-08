@@ -28,12 +28,12 @@ def mklayers_little_step(hl):
 
 
 DATASET = 'rna'
-ODIR = utils.mkpath(('report', DATASET))
+ODIR = utils.mkpath(('report', 'evolution'))
 utils.debug('~~~ {0} ~~~\nEvolution Strategy\n'.format(DATASET.upper()))
 
 # build constants
 A = ['logistic', 'tanh', 'relu', 'identity']
-A = A[2:]
+A = A[3:]
 MAX_STEPS = 100
 MAX_UNCHANGED = 5
 BIG = 'big'
@@ -115,13 +115,7 @@ def mkseeds(hl, N):
             tick += 1
             if tick >= exhausted_space:
                 utils.debug('solution space exhausted for {0}'.format(hl))
-                tick = 0
-                if mode == LITTLE:
-                    return None
-                else:
-                    utils.debug('switching to {0} mode'.format(LITTLE))
-                    mode = LITTLE
-                    n = 0
+                return None
         else:
             visited[str(layer)] = True
             tick = 0
@@ -214,10 +208,9 @@ for activation in A:
     i = 0
     visited = {}
     errors = []
-    history = [[init_ls, init_nl]]
+    history = []
     optimal = [[init_ls, init_nl]]
     chosen = [init_ls] * init_nl
-    visited[str(chosen)] = True
     chosen_err = 1
 
     # display useless info
@@ -230,13 +223,13 @@ for activation in A:
                 .format(activation, N, pool_size, MAX_STEPS, MAX_UNCHANGED, chosen))
 
     while True:
-        if unchanged_count >= MAX_UNCHANGED:
-            if mode == BIG:
-                mode = LITTLE
-                unchanged_count = 0
-                utils.debug('switching to {0} mode'.format(LITTLE))
-            else:
-                break
+        #if unchanged_count >= MAX_UNCHANGED:
+        #    if mode == BIG:
+        #        mode = LITTLE
+        #        unchanged_count = 0
+        #        utils.debug('switching to {0} mode'.format(LITTLE))
+        #    else:
+        #        break
         if (MAX_STEPS > 0) and (i >= MAX_STEPS):
             break
         i += 1
