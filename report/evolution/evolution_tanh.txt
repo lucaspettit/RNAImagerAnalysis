@@ -1,0 +1,9 @@
+activation    = tanh
+split         = 80
+arg*          = [140]
+calc time     = 0.0007896453019731775
+val. error    = 0.14085433200453498
+train error   = 0.1703
+test error    = 0.1514
+num updates   = 15
+total evals   = 75

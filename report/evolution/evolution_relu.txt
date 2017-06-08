@@ -1,0 +1,9 @@
+activation    = relu
+split         = 80
+arg*          = [199, 199, 199]
+calc time     = 0.000531273610436493
+val. error    = 0.03893245071864829
+train error   = 0.0427
+test error    = 0.0605
+num updates   = 22
+total evals   = 110

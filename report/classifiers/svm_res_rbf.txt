@@ -1,0 +1,24 @@
+split       = 90.0
+arg*        = 100
+calc time   = 2.1292215085 ms
+memory      = 0.056 Kb
+val. error  = 0.1615
+train error = 0.0
+test error  = 0.2419
+
+split       = 80.0
+arg*        = 100
+calc time   = 2.0255814623 ms
+memory      = 0.056 Kb
+val. error  = 0.1639
+train error = 0.0
+test error  = 0.2368
+
+split       = 70.0
+arg*        = 100
+calc time   = 1.7946462488 ms
+memory      = 0.056 Kb
+val. error  = 0.1749
+train error = 0.0
+test error  = 0.2586
+

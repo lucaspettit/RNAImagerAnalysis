@@ -1,0 +1,24 @@
+split       = 90.0
+arg*        = relu
+calc time   = 0.3151137924 ms
+memory      = 0.056 Kb
+val. error  = 0.0646
+train error = 0.0435
+test error  = 0.0756
+
+split       = 80.0
+arg*        = relu
+calc time   = 0.3164588351 ms
+memory      = 0.056 Kb
+val. error  = 0.0622
+train error = 0.1603
+test error  = 0.0865
+
+split       = 70.0
+arg*        = relu
+calc time   = 0.2907806496 ms
+memory      = 0.056 Kb
+val. error  = 0.0745
+train error = 0.0309
+test error  = 0.1073
+

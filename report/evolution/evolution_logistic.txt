@@ -1,0 +1,9 @@
+activation    = logistic
+split         = 80
+arg*          = [180]
+calc time     = 0.0005416523346857254
+val. error    = 0.08056284972387814
+train error   = 0.0922
+test error    = 0.1016
+num updates   = 11
+total evals   = 55
