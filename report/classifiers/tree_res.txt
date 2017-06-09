@@ -1,24 +1,24 @@
 split       = 90.0
-arg*        = 99
-calc time   = 0.0413334299 ms
+arg*        = 36
+calc time   = 0.0433095025 ms
 memory      = 0.056 Kb
-val. error  = 0.0317
+val. error  = 0.026
 train error = 0.0
-test error  = 0.041
+test error  = 0.0536
 
 split       = 80.0
-arg*        = 52
-calc time   = 0.0513519957 ms
+arg*        = 18
+calc time   = 0.0498611487 ms
 memory      = 0.056 Kb
-val. error  = 0.0324
+val. error  = 0.029
 train error = 0.0
-test error  = 0.0551
+test error  = 0.0391
 
 split       = 70.0
-arg*        = 22
-calc time   = 0.0423259867 ms
+arg*        = 46
+calc time   = 0.0399014841 ms
 memory      = 0.056 Kb
-val. error  = 0.0362
+val. error  = 0.0287
 train error = 0.0
-test error  = 0.0497
+test error  = 0.0632
 

@@ -1,0 +1,5 @@
+identity : 0.0659 > [157, 157, 157] : ~ 0.12 / 0.07 = 1.7x improvement
+logistic : 0.1016 > [180]		    : ~ 0.14 / 0.10 = 1.4x improvement
+tanh     : 0.1514 > [140]           : ~ 0.28 / 0.15 = 1.9x improvement
+relu     : 0.0605 > [199, 199, 199] : ~ 0.05 / 0.04 = 1.3x improvement
+                                            average = 1.6x improvement

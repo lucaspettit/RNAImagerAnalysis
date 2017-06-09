@@ -1,0 +1,9 @@
+activation    = identity
+split         = 80
+arg*          = [157, 157, 157]
+calc time     = 0.0004272141130031488
+val. error    = 0.10922832169110923
+train error   = 0.086
+test error    = 0.0659
+num updates   = 10
+total evals   = 50

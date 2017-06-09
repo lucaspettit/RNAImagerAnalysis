@@ -33,7 +33,7 @@ utils.debug('~~~ {0} ~~~\nEvolution Strategy\n'.format(DATASET.upper()))
 
 # build constants
 A = ['logistic', 'tanh', 'relu', 'identity']
-A = A[3:]
+A = [A[2]]
 MAX_STEPS = 100
 MAX_UNCHANGED = 5
 BIG = 'big'
@@ -230,6 +230,9 @@ for activation in A:
         #        utils.debug('switching to {0} mode'.format(LITTLE))
         #    else:
         #        break
+        if unchanged_count >= MAX_UNCHANGED:
+            utils.debug('no changed for {0} iterations\nstopping')
+            break
         if (MAX_STEPS > 0) and (i >= MAX_STEPS):
             break
         i += 1
